@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Jigna's Weekly Wellness Plan</title>
+<title>Jigna's Weight Reduction & Fitness Plan</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0} :root{--rose:#be185d;--pink:#ec4899;--soft:#fff1f2;--lav:#f5f3ff;--ink:#312e3d;--muted:#756d7d;--line:#eadde5;--white:#fff;--green:#16845b;--amber:#b76a12;--shadow:0 8px 28px #7c2d5a14}
 body{font-family:Inter,"Segoe UI",system-ui,sans-serif;background:linear-gradient(145deg,#fff7f9,#faf5ff 55%,#f0fdfa);color:var(--ink);min-height:100vh}
@@ -39,7 +39,7 @@ button,input{font:inherit}.top{position:sticky;top:0;z-index:5;background:#fffdf
 </head>
 <body>
 <header class="top"><div class="topin"><div class="brand"><button class="avatarbtn" id="avatarBtn" aria-label="Choose profile photo"><span class="avatarplaceholder" id="avatarPlaceholder">👩‍💼</span><img id="avatarImage" alt="Jigna's profile photo"><span class="cambadge">📷</span></button><input id="avatarInput" type="file" accept="image/png,image/jpeg,image/webp" hidden><span class="profiletext"><b>Jigna's Wellness Tracker</b><small>Tap photo to change</small></span></div><span class="pill">5′2″ · Weekly Plan</span></div></header>
-<section class="hero"><div class="heroin"><div><h1>Strong, balanced, thriving.</h1><p>A practical 7-day pure vegetarian wellness plan built for busy Jigna—breakfast at 8:30 AM, lunch at 12:30 PM, fitting lectures & labs with energy and health.</p></div><div class="today"><b id="clock"></b><span id="date"></span></div></div></section>
+<section class="hero"><div class="heroin"><div><h1>Fit, healthy, energized.</h1><p>A proven 7-day vegetarian weight reduction plan with low GI foods and balanced fitness. Breakfast at 7:45 AM, lunch at 12:30 PM, dinner at 7:30 PM—designed for sustainable weight loss while maintaining energy through your busy lectures & labs.</p></div><div class="today"><b id="clock"></b><span id="date"></span></div></div></section>
 <section class="nowcard"><div class="nowbox"><div class="nowicon" id="nowIcon">🍽️</div><div><div class="noweyebrow" id="nowLabel">WHAT TO EAT NOW</div><h2 id="nowMeal">Checking today's plan…</h2><p id="nowFood"></p></div><button class="pdfbtn" id="pdfBtn">⬇ Download weekly PDF</button></div></section>
 <nav class="nav"><div class="navin"><button class="tab active" data-tab="overview">Overview</button><button class="tab" data-tab="d0">Mon</button><button class="tab" data-tab="d1">Tue</button><button class="tab" data-tab="d2">Wed</button><button class="tab" data-tab="d3">Thu</button><button class="tab" data-tab="d4">Fri</button><button class="tab" data-tab="d5">Sat</button><button class="tab" data-tab="d6">Sun</button><button class="tab todaytab" id="todayTab" data-tab="d0">Today</button><button class="tab" data-tab="analysis">Progress</button></div></nav>
 <div class="daysheet" id="daySheet" role="dialog" aria-modal="true" aria-labelledby="daySheetTitle"><div class="sheetbox"><div class="sheethandle"></div><div class="sheethead"><h2 id="daySheetTitle">Choose a day</h2><button class="sheetclose" id="sheetClose" aria-label="Close day picker">×</button></div><div class="daychoices" id="dayChoices"></div></div></div>
@@ -49,64 +49,64 @@ button,input{font:inherit}.top{position:sticky;top:0;z-index:5;background:#fffdf
  <div class="stats"><div class="card"><div class="label">Current weight</div><div class="value rose" id="weightStat">59.0</div><div class="sub">kg</div></div><div class="card"><div class="label">BMI</div><div class="value">23.8</div><div class="sub">healthy weight range</div></div><div class="card"><div class="label">Weekly progress</div><div class="value rose" id="weekPct">0%</div><div class="bar"><div class="fill" id="weekFill" style="width:0"></div></div></div><div class="card"><div class="label">Daily movement</div><div class="value">40</div><div class="sub">minutes target</div></div></div>
  <div class="week" id="weekGrid"></div>
  <h2 class="section">Jigna's plan logic</h2>
- <div class="notice"><b>Energy & fitness approach:</b> Since you're already at healthy weight, this plan focuses on sustained energy, building strength, and managing high cholesterol through smart vegetarian choices. 7 AM is tiffin prep for your son. Your breakfast at 8:30 AM, lunch at 12:30 PM, and light South Indian dinner at 7:30 PM fit your lecture & lab schedule perfectly. Water target: about 2.5–3 L/day.</div>
- <div class="rules"><div class="rule">🍽️ <b>7 AM: Tiffin for son:</b> Quick, nutritious meals you prepare for your son. Then prepare for office.</div><div class="rule">🍴 <b>Breakfast 8:30 AM:</b> Hearty, home-cooked breakfast for you—whole grains + paneer/dal + veggies for sustained energy through 12:30 lunch.</div><div class="rule">🥛 <b>Protein & fiber:</b> Include dal, paneer, curd, sprouts, chana in main meals. Whole grains keep cholesterol and energy steady.</div><div class="rule">🚶‍♀️ <b>Movement fit:</b> Brisk walk or light strength 40 min, 5 days; weekend stretch or yoga. Fits your lecture and lab schedule.</div><div class="rule">🫗 <b>Hydration & snacks:</b> Drink 2–3 L water at breaks. Afternoon snack at 3:30 PM (nuts, chana, fruit). Light South Indian dinner after 7 PM.</div><div class="rule">❤️ <b>South Indian evening:</b> Idli, dosa, upma only for dinner/evening meals—lighter on digestion, perfect before sleep. Lunch keeps it simple (rotis + dal + sabzi).</div></div>
+ <div class="notice"><b>Weight reduction & sustained energy:</b> This plan targets sustainable weight loss (0.5–1 kg/week) through low GI foods, high protein, and strategic portions—while keeping energy high for your busy schedule. 7 AM is tiffin prep. Breakfast at 7:45 AM, lunch at 12:30 PM, dinner at 7:30 PM. Zero refined sugar or white flour. Water target: 3–3.5 L/day for metabolism & blood glucose control.</div>
+ <div class="rules"><div class="rule">🍽️ <b>7 AM: Tiffin for son:</b> Nutritious, quick meals you prepare. High protein keeps him satisfied.</div><div class="rule">🍴 <b>Breakfast 7:45 AM:</b> Low GI whole grains + high protein (paneer, tofu, curd)—sustained energy through lunch without crashes.</div><div class="rule">🥛 <b>Protein every meal:</b> Dal, paneer, tofu, curd, sprouts, legumes. High fiber (whole grains, vegetables) keeps you full and blood sugar stable.</div><div class="rule">🚶‍♀️ <b>Fitness (300 min/week):</b> 5 days cardio + strength mix (45–60 min). Weekend yoga/stretching. Proven for weight loss & metabolic health.</div><div class="rule">🫗 <b>Hydration & snacks:</b> 3–3.5 L water daily (crucial for metabolism). Afternoon snack at 3:30 PM (protein-rich: nuts, chana, sprouts). No processed foods.</div><div class="rule">❤️ <b>South Indian (2x/week):</b> Monday Idli + Sambar, Friday Dosa. Rest of week: varied rotis, dal, tofu, brown rice for metabolic variety and balance.</div></div>
  <p class="footer">This is a general wellness plan, not medical care. Since you have high cholesterol, please share this plan with your doctor or registered dietitian for personalization. If you're on medication, get their OK before making changes.</p>
 </section>
-<section class="panel" id="analysis"><div class="analysis"><div class="card analysisintro"><div class="label">Personal progress studio</div><h2>Energy, strength, and cholesterol—the real measures.</h2><p>Since you're already at healthy weight, track how you feel: energy levels, how your clothes fit, and your cholesterol numbers at next checkup. Weekly weigh-ins help spot trends.</p></div><div class="card bmi"><div class="label">Current BMI</div><div class="num" id="bmiNum">23.8</div><b>Healthy weight</b><p>Calculated from 59 kg and 1.575 m. Your focus is building lean strength and managing cholesterol, not weight loss. BMI is just one measure.</p></div><div class="card"><div class="label">Practical milestones</div><div class="targetrow"><span>Energy level improvement</span><b>2–3 weeks</b></div><div class="targetrow"><span>Noticeable strength gain</span><b>4–6 weeks</b></div><div class="targetrow"><span>Cholesterol checkup target</span><b>After 8 weeks</b></div><div class="targetrow"><span>Sustainable weekly loss (if targeted)</span><b>0.25–0.5 kg/week</b></div></div><div class="card"><div class="label">Log weight</div><div class="inputrow"><input id="weightInput" type="number" step=".1" min="35" max="200" placeholder="Weight in kg"><button id="logBtn">Save</button></div><div class="history" id="history"></div></div><div class="card"><div class="label">How to measure</div><p style="font-size:13px;color:var(--muted);line-height:1.7;margin-top:10px">Log once weekly, after waking and using the washroom, before food. Judge the 4-week trend. Your clothes fit and energy are the real win.</p></div></div></section>
+<section class="panel" id="analysis"><div class="analysis"><div class="card analysisintro"><div class="label">Weight reduction progress</div><h2>Sustainable weight loss + stable blood glucose + sustained energy.</h2><p>Track weekly weight trends (not daily fluctuations), energy levels, how your clothes fit, and blood glucose readings if available. Consistency over perfection. Weight loss is 80% diet, 20% fitness—but fitness dramatically improves blood sugar control.</p></div><div class="card bmi"><div class="label">Target BMI range</div><div class="num" id="bmiNum">23.8</div><b>Reducing towards healthier range</b><p>Calculated from 59 kg and 1.575 m. Target: 0.5–1 kg/week loss through mild calorie deficit (1800–2000 kcal/day) + low GI foods. Your focus: weight reduction + BGL management + energy maintenance.</p></div><div class="card"><div class="label">Practical milestones</div><div class="targetrow"><span>Energy stabilization (no crashes)</span><b>1–2 weeks</b></div><div class="targetrow"><span>Noticeable weight loss</span><b>2–3 weeks</b></div><div class="targetrow"><span>Visible body change</span><b>4–6 weeks</b></div><div class="targetrow"><span>Sustained weekly loss target</span><b>0.5–1 kg/week</b></div></div><div class="card"><div class="label">Log weight</div><div class="inputrow"><input id="weightInput" type="number" step=".1" min="35" max="200" placeholder="Weight in kg"><button id="logBtn">Save</button></div><div class="history" id="history"></div></div><div class="card"><div class="label">How to measure</div><p style="font-size:13px;color:var(--muted);line-height:1.7;margin-top:10px">Log once weekly, after waking and using the washroom, before food. Judge the 4-week trend. Your clothes fit and energy are the real win.</p></div></div></section>
 <div id="days"></div>
 </main>
 <script>
 const PLAN=[
-{day:"Monday",move:"40-min brisk walk (morning or evening)",meals:[
-["7:00 AM","Tiffin prep for son","Poha with peas, carrot, peanuts + banana. Pack in lunch box for him.","For son|Portable"],
-["8:30 AM","Breakfast for Jigna","2 slices whole wheat toast + paneer scramble + tomato + warm milk or chai.","Protein|Quick"],
-["12:30 PM","Lunch break","2 small rotis + dal fry + mixed vegetable sabzi + salad + raita.","Balanced|Satisfying"],
-["3:30 PM","Afternoon break","Handful roasted chana or almonds + water or chai.","Energy|No sugar"],
-["6:30 PM","Arrive home","Rest 10–15 min, hydrate well.","Transition|Hydrate"],
-["7:30 PM","Dinner","Idli (2–3) with sambar + coconut chutney + raita.","South Indian|Light"]]},
-{day:"Tuesday",move:"20-min home strength (bodyweight) + 20-min walk",meals:[
-["7:00 AM","Tiffin prep for son","Moong dal chilla (2) with mint chutney in container.","For son|Protein"],
-["8:30 AM","Breakfast for Jigna","Paratha (1–2) with curd + cucumber + warm milk.","Fiber|Filling"],
-["12:30 PM","Lunch break","2 small rotis + chole curry + spinach sabzi + salad + chaas.","Protein|Comforting"],
-["3:30 PM","Afternoon break","1 banana or apple + water or light tea.","Natural|Fresh"],
-["6:30 PM","Arrive home","Stretch for 10 min before dinner.","Recovery|Wind-down"],
-["7:30 PM","Dinner","Dosa (1–2) with sambar + chutney + raita.","South Indian|Tasty"]]},
-{day:"Wednesday",move:"40-min brisk walk",meals:[
-["7:00 AM","Tiffin prep for son","Besan chilla (2–3) with green chutney.","For son|Quick"],
-["8:30 AM","Breakfast for Jigna","Upma with vegetables + ½ cup curd + warm milk.","Energy|Home cooked"],
-["12:30 PM","Lunch break","2 small rotis + rajma curry + cabbage-peas sabzi + salad.","Protein|Hearty"],
-["3:30 PM","Afternoon break","Roasted chana (small handful) with lemon + water.","Crunchy|Energy"],
-["6:30 PM","Arrive home","Cucumber or carrot sticks with hummus.","Hydrating|Light"],
-["7:30 PM","Dinner","Vegetable khichdi (rice + dal + veggies) + raita + salad.","Comfort|Easy"]]},
-{day:"Thursday",move:"20-min home strength + 20-min walk",meals:[
-["7:00 AM","Tiffin prep for son","Chikhalwali with vegetables. Pack in container.","For son|Portable"],
-["8:30 AM","Breakfast for Jigna","2 slices whole wheat bread + egg-less scramble (paneer) + tea or milk.","Protein|Quick"],
-["12:30 PM","Lunch break","Brown rice + tuvar dal + lauki sabzi + salad + raita.","Whole grain|Balanced"],
-["3:30 PM","Afternoon break","Makhana (dry roasted, 25g) with salt and pepper + water.","Low calorie|Crunchy"],
-["6:30 PM","Arrive home","Rest. Drink warm turmeric milk.","Recovery|Hydrating"],
-["7:30 PM","Dinner","Upma with vegetables + coconut chutney + raita.","South Indian|Nourishing"]]},
-{day:"Friday",move:"40-min brisk walk (prepare for weekend)",meals:[
-["7:00 AM","Tiffin prep for son","Poha or chikhalwali. Make extra for his snack time.","For son|Quick"],
-["8:30 AM","Breakfast for Jigna","Vegetable paratha (1–2) with curd + warm milk or chai.","Fiber|Satisfying"],
-["12:30 PM","Lunch break","2 small rotis + chana masala + bindi sabzi + salad + chaas.","Protein|Energy"],
-["3:30 PM","Afternoon break","Handful peanuts or almonds + water or tea.","Portable|Nourishing"],
-["6:30 PM","Arrive home","Rest and hydrate. You've worked hard.","Transition|Self-care"],
-["7:30 PM","Dinner","Dosa (1–2) with sambar + chutney + cucumber raita.","South Indian|Light"]]},
-{day:"Saturday",move:"45-min relaxed walk, dance, yoga or swimming",meals:[
-["8:00 AM","Morning hydration","Warm water with lemon + apple.","Detox|Gentle"],
-["9:00 AM","Leisurely breakfast","Besan cheela (2–3) with mint chutney + ½ cup curd.","Protein|Homemade"],
-["11:30 AM","Mid-morning snack","Banana or berries with 5–7 almonds.","Natural|Filling"],
-["1:30 PM","Family lunch","2 small rotis + paneer bhurji + mixed vegetable sabzi + salad.","Choice|Enjoyable"],
-["4:30 PM","Evening snack","Chai with roasted chana or popcorn (light oil).","Social|Snacking"],
-["7:30 PM","Dinner","Vegetable upma + coconut chutney + raita.","South Indian|Comfort"]]},
-{day:"Sunday",move:"40-min easy walk or stretching + yoga",meals:[
-["8:00 AM","Weekend start","Homemade puri (1–2, fried minimal oil) with chole curry + yogurt.","Treat|Balanced"],
-["10:00 AM","Coffee break","Filter coffee or chai with banana or fruit.","Ritual|Relaxed"],
-["1:00 PM","Family lunch","2 small rotis OR ½ bowl rice + paneer vegetable + family sabzi + salad.","Quality time|Balanced"],
-["4:00 PM","Snack time","Roasted peanuts, cucumber, or homemade chikhalwali with family.","Social|Mindful"],
-["6:30 PM","Evening walk + tea","Walk before sunset, chai with cookies or rusk.","Bonding|Active"],
-["7:30 PM","Dinner","Idli (2–3) with sambar + chutney + cucumber raita.","South Indian|Restorative"]]}];
+{day:"Monday",move:"45-min Brisk Walk + 10-min Strength Training",meals:[
+["7:00 AM","Tiffin prep for son","Moong dal chilla (2) with mint chutney + apple.","For son|Protein"],
+["7:45 AM","Breakfast for Jigna","½ cup overnight oats + ½ cup berries + 50g paneer + 1 tbsp almond butter + cinnamon.","Low GI|High Protein"],
+["12:30 PM","Lunch break","2 small whole wheat rotis + ¾ cup toor dal curry + cucumber salad + 2 tbsp curd.","Balanced|BGL Control"],
+["3:30 PM","Afternoon break","25g roasted chana + green tea + 1 small apple.","Low Cal|Protein Snack"],
+["6:30 PM","Arrive home","Warm water with lemon + rest 10–15 min.","Rest|Hydrate"],
+["7:30 PM","Dinner","2 idlis + ¾ cup sambar + 2 tbsp coconut chutney + cucumber salad.","South Indian|Light"]]},
+{day:"Tuesday",move:"30-min Strength Training + 15-min Walk",meals:[
+["7:00 AM","Tiffin prep for son","Besan chilla (2) with sprouts + green chutney + banana.","For son|Protein"],
+["7:45 AM","Breakfast for Jigna","¾ cup vegetable upma + 1 tbsp ghee + ½ cup Greek yogurt + warm milk.","Whole Grain|High Protein"],
+["12:30 PM","Lunch break","⅔ cup brown rice + 1 cup chana masala + spinach-tomato salad + ¼ cup curd.","High Fiber|Legume Protein"],
+["3:30 PM","Afternoon break","½ cup curd-based cucumber raita + 12 almonds + water.","Probiotic|Healthy Fats"],
+["6:30 PM","Arrive home","Water with lemon + rest.","Rest|Hydrate"],
+["7:30 PM","Dinner","2 small whole wheat rotis + ¾ cup paneer makhani + steamed green beans + salad.","High Protein|Comfort"]]},
+{day:"Wednesday",move:"45-min Brisk Walk + 10-min Strength Training",meals:[
+["7:00 AM","Tiffin prep for son","Poha (½ cup) with peas, carrots, peanuts + lemon + banana.","For son|Quick"],
+["7:45 AM","Breakfast for Jigna","2-egg omelet (spinach, onion, tomato) + 1 slice whole wheat toast + black tea.","High Protein|Brain Food"],
+["12:30 PM","Lunch break","2 ragi (finger millet) rotis + ¾ cup rajma curry + vegetable salad + 2 tbsp curd.","Super Low GI|BGL Control"],
+["3:30 PM","Afternoon break","1 cup green tea + 1 homemade protein bar (oats, peanut butter, dark chocolate).","Energy Boost|Antioxidants"],
+["6:30 PM","Arrive home","1 cup tomato & vegetable soup + rest.","Rest|Hydrate"],
+["7:30 PM","Dinner","1 cup vegetable khichdi + ¼ cup curd + cucumber salad + pickle.","Comfort|Digestible"]]},
+{day:"Thursday",move:"30-min Strength Training + 15-min Walk",meals:[
+["7:00 AM","Tiffin prep for son","Whole wheat bread (2 slices) + paneer & veggie sandwich (cucumber, tomato, lettuce).","For son|Portable"],
+["7:45 AM","Breakfast for Jigna","½ cup mixed sprout salad + 2 tbsp paneer crumbles + ½ slice whole wheat toast + lime dressing.","Raw|Enzyme Rich"],
+["12:30 PM","Lunch break","¾ cup millet upma + ¾ cup dal soup (moong) + green salad + lemon.","Superfood|Low GI"],
+["3:30 PM","Afternoon break","25g dry-roasted makhana + black salt + chat masala + water.","Lowest GI|Joint Support"],
+["6:30 PM","Arrive home","½ cup fresh beetroot juice (diluted) + ginger + lemon.","Rest|Hydrate"],
+["7:30 PM","Dinner","2 moong dal chillas + ½ cup cucumber raita + mixed pickle + salad.","High Protein|Digestible"]]},
+{day:"Friday",move:"60-min Moderate Pace Walk",meals:[
+["7:00 AM","Tiffin prep for son","2 buckwheat pancakes + ½ cup mixed berries + 1 tbsp honey drizzle + banana.","For son|Gluten-Free"],
+["7:45 AM","Breakfast for Jigna","100g tofu scrambled (spinach, mushroom, 1 tbsp olive oil) + 1 slice whole wheat toast + herbal tea.","Plant Protein|Iron Rich"],
+["12:30 PM","Lunch break","½ cup cooked quinoa + ¾ cup chickpea curry + spinach-kale salad + lemon dressing.","Complete Protein|Superfood"],
+["3:30 PM","Afternoon break","1 tbsp natural peanut butter + 1 sliced apple + herbal tea.","Healthy Fats|Energy"],
+["6:30 PM","Arrive home","1 cup mixed vegetable + masoor dal soup + rest.","Rest|Hydrate"],
+["7:30 PM","Dinner","1 vegetable dosa + ¾ cup sambar + tomato chutney (measured) + cucumber salad.","South Indian|Treat"]]},
+{day:"Saturday",move:"50-min Mixed Activity (Dance/Yoga/Swimming)",meals:[
+["8:00 AM","Morning hydration","1 cup warm water + lemon juice + ginger + turmeric.","Detox|Anti-Inflammatory"],
+["9:00 AM","Leisurely breakfast","2-egg omelet (broccoli, onion) + 20g cheese + 1 slice multigrain toast + butter optional.","Weekend Treat|High Protein"],
+["11:30 AM","Mid-morning snack","30g mixed nuts (almonds, walnuts, cashews) + 10g dried berries + water.","Antioxidant|Energy"],
+["1:30 PM","Family lunch","¾ cup paneer bhurji + ⅔ cup brown rice + mixed vegetable curry + raw salad.","Family Time|Balanced"],
+["4:30 PM","Evening snack","1 cup green tea + 2 tbsp homemade granola (oats, nuts, minimal honey) + berries.","Antioxidant|Weekend"],
+["7:30 PM","Dinner","⅔ cup brown rice + ¾ cup masoor dal + steamed broccoli + lemon + black salt.","Complete Protein|Recovery"]]},
+{day:"Sunday",move:"45-min Relaxed Walk + Yoga & Stretching",meals:[
+["8:00 AM","Relaxed start","½ cup low-fat yogurt + ½ banana + ½ cup berries + 1 tbsp granola (minimal) + honey drizzle.","Probiotic|Breakfast"],
+["10:00 AM","Coffee break","1 cup black coffee + 1 whole wheat rusk + 10g dark chocolate.","Sunday Ritual|Minimal Sugar"],
+["1:00 PM","Family lunch (treat)","1 puri (minimal oil) + 1 cup chole curry + 1 tbsp pickle + mixed salad.","Weekly Treat|Family"],
+["4:00 PM","Snack time","25g roasted peanuts + cucumber slices + ½ cup chikhalwali (rice-based).","Social|Protein"],
+["6:30 PM","Evening walk & tea","1 cup herbal tea + 1 small homemade oatmeal cookie (minimal sugar).","Ritual|Controlled"],
+["7:30 PM","Dinner","2 small whole wheat rotis + ¾ cup tofu stir-fry (broccoli, peppers, onion) + salad.","Plant Protein|Light"]]}];
 const KEY="jigna_week_v1", WKEY="jigna_weights_v1"; let done=JSON.parse(localStorage.getItem(KEY)||"{}");
 const AVATARKEY="jigna_avatar_v1";
 function showAvatar(src){if(!src)return;avatarImage.src=src;avatarImage.style.display="block";avatarPlaceholder.style.display="none"}
